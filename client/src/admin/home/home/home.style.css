@@ -1,0 +1,9 @@
+.content {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+app-navbar-component {
+    width: 15%;
+}
