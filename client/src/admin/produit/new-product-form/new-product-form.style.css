@@ -1,0 +1,41 @@
+.content {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    top: 0;
+    left: 0;
+    opacity: 60%;
+    display: flex;
+
+}
+
+.addProduct {
+    width: 60%;
+    height: 85%;
+    top: 8%;
+    left: 20%;
+    position: absolute;
+    background-color: white;
+    border: 1px solid gainsboro;
+}
+
+.close {
+    width: 3%;
+    height: 4%;
+    background-color: red;
+    border-radius: 50%;
+    margin-left: 95%;
+    margin-top: 1%;
+}
+
+input {
+    display: block;
+    width: 30%;
+}
+
+button {
+    width: 30%;
+    height: 5%;
+    border: 1px solid gainsboro;
+}

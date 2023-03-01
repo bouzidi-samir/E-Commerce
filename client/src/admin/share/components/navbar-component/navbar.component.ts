@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-navbar-component',
+  selector: 'share-navbar-component',
   templateUrl: 'navbar.component.html',
   styleUrls: ['./navbar.style.css']
 })
-export class NavbarComponentComponent {
+export class NavbarComponent {
+  
 
 }

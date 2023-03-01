@@ -25,7 +25,11 @@ public class Article extends AbstractEntity {
     private String nom;
 
     @Column(name = "description")
-    private String decription;
+    private String description;
+
+
+    @Column(name = "image_url")
+    private String image;
 
     @Column(name = "prix")
     private BigDecimal prix;

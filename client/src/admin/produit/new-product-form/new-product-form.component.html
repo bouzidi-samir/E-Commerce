@@ -1,0 +1,14 @@
+<div class="content"> </div>
+    <form class="addProduct" (ngSubmit)="onSubmit(registerForm)" #registerForm="ngForm" >
+        <div (click)="onCloseForm()" class="close"></div>
+        <label>Nom </label>
+        <input type="text"  name="nom" [(ngModel)]="newArticle.nom" >
+        <label>Prix </label>
+        <input  name="prix" [(ngModel)]="newArticle.prix" #prix="ngModel">
+        <label>Description </label>
+        <input type="text" name="description" [(ngModel)]="newArticle.description" #description="ngModel">
+        <label>Image </label>
+        <input type="text" name="image_url" [(ngModel)]="newArticle.image_url" #image_url="ngModel">
+        <button type="submit">Valider</button>
+    </form>
+

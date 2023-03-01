@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavbarComponentComponent } from 'src/share/components/navbar-component/navbar.component';
+import { ArticleI } from 'src/admin/models/Article';
 
 @Component({
   selector: 'app-home',
@@ -7,5 +7,7 @@ import { NavbarComponentComponent } from 'src/share/components/navbar-component/
   styleUrls: ['./home.style.css']
 })
 export class HomeComponent {
+
+
 
 }

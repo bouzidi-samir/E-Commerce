@@ -10,8 +10,12 @@ import jakarta.persistence.Id;
 import jakarta.persistence.MappedSuperclass;
 import jakarta.persistence.GeneratedValue;
 import lombok.Data;
+
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
 import org.springframework.data.annotation.*;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
+import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
@@ -25,11 +29,13 @@ public class AbstractEntity implements Serializable {
     @GeneratedValue
     private Integer id;
 
+    @CreationTimestamp
     @CreatedDate
-    @Column(name = "creationDate", nullable=false)
+    @Column(name = "creationDate",  updatable = false)
     @JsonIgnore
     private Date creationDate;
 
+    @UpdateTimestamp
     @LastModifiedDate
     @Column(name = "updateDate")
     @JsonIgnore

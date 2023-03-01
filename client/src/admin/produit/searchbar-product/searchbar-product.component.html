@@ -1,0 +1,6 @@
+<div class="content">
+    <app-new-product-form *ngIf="newProductForm" [articleList]="articleList" (closeNewProductForm)="displayNewArticleForm(false)"/>
+    <p class="search">Recherche</p>
+    <div class="searchbar"></div>
+    <button (click)="displayNewArticleForm(true)" class="add-button">+Ajouter</button>
+</div>

@@ -1,0 +1,11 @@
+.content {
+    width: 88vw;
+    height: 8%;
+    background-color: white;
+    border-bottom: solid 1px gainsboro ;
+}
+
+p {
+    margin: 0%;
+    padding: 0%;
+}

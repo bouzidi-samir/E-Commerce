@@ -1,0 +1,27 @@
+.content {
+    display: flex;
+}
+
+.product-infos {
+    width: 88vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-card {
+    width: 90%;
+    height: 90%;
+    border: 1px solid gainsboro;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.img {
+    width: 90%;
+    height: 70%;
+    margin: auto;
+    object-fit: contain;
+}

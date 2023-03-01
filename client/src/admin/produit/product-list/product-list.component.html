@@ -1,0 +1,9 @@
+<div class="product-list-content">
+    <div class="product-grid">
+        <div (click)="goToProduct(article.id)" class="article" *ngFor="let article of articleList">
+            <img  class="article-img" src="{{article.image_url}}">
+            <h2> {{article.nom}}</h2>
+            <span> {{article.prix | currency }}</span>
+        </div>
+    </div>
+</div>

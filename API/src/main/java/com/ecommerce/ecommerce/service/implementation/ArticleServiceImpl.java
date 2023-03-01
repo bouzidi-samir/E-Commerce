@@ -2,17 +2,18 @@ package com.ecommerce.ecommerce.service.implementation;
 
 import com.ecommerce.ecommerce.service.ArticleSevice;
 import com.ecommerce.ecommerce.dto.ArticleDto;
+import com.ecommerce.ecommerce.model.Article;
 import com.ecommerce.ecommerce.repository.ArticleRepository;
-import com.ecommerce.ecommerce.validator.ArticleValidator;
-
 
 import java.util.List;
+import java.util.Optional;
+import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class ArticleServiceImpl implements ArticleService {
+public class ArticleServiceImpl implements  ArticleSevice {
     
     private ArticleRepository articleRepository;
     
@@ -21,21 +22,26 @@ public class ArticleServiceImpl implements ArticleService {
         this.articleRepository = articleRepository;
     }
 
-
     @Override
     public List<ArticleDto> findAll() {
-        return null;
+       return articleRepository.findAll().stream()
+                .map(ArticleDto::fromEntity)
+                .collect(Collectors.toList());
     }
 
     @Override
     public ArticleDto findById(Integer id) {
-        return null;
+        Optional<Article> article = articleRepository.findById(id);
+        return  ArticleDto.fromEntity(article.get());
     }
 
     @Override
     public ArticleDto save(ArticleDto dto) {
-
-        return dto;
+        return ArticleDto.fromEntity(
+            articleRepository.save(
+                ArticleDto.toEntity(dto)
+            )
+        );
     }
 
     @Override

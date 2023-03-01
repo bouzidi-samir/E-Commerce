@@ -1,9 +1,16 @@
-.content {
+.page-content {
     width: 100vw;
     height: 100vh;
     display: flex;
 }
 
-app-navbar-component {
-    width: 15%;
+.dash-content {
+    width: 88vw;
+    height: 92%;
 }
+
+
+
+
+
+

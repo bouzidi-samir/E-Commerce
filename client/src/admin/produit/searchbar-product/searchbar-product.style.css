@@ -1,0 +1,30 @@
+.content {
+    width: 88vw;
+    height: 8%;
+    background-color: white;
+    border-bottom: solid 1px gainsboro ;
+    display: flex;
+    align-items: center;
+}
+
+.search {
+    margin-left: 10%;
+    margin-right: 2%;
+}
+
+.searchbar {
+    width: 60%;
+    height: 50%;
+    border: solid 1px gainsboro;
+    margin-right: 4%;
+}
+
+.add-button {
+    width: 12%;
+    height: 60%;
+    color: white;
+    background-color: #A2EB91;
+    border-radius: 7%;
+    border: none;
+    cursor: pointer;
+}

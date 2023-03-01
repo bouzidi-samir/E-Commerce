@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AdminService } from 'src/admin/admin.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['dashboard.style.css']
 })
 export class DashboardComponent {
+
+  constructor(private adminService : AdminService) {}
+
+  
 
 }

@@ -1,0 +1,39 @@
+.navbar {
+   width: 12vw;
+    height: 100vh;
+    background-color: #E8A595 ;
+}
+
+
+ul {
+    height: 10%;
+    background-color: #E8A595;
+}
+
+a {
+    display: block;
+}
+
+.navLink {
+    color: white;
+    text-decoration: none;
+    list-style-type: none; 
+    text-align: center;
+    margin-bottom: 15%;
+    margin-top: 15%;
+    font-size: 20px;
+}
+
+
+.navBrand {
+    color: white;
+    text-decoration: none;
+    list-style-type: none; 
+    text-align: center;
+    margin-bottom: 5%;
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    padding-top: 1px;
+    padding-bottom: 20%;
+}
