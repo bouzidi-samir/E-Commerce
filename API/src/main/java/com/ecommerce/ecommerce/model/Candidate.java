@@ -10,6 +10,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
+import java.math.BigDecimal;
 
 @Data
 @Builder
@@ -17,11 +18,20 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @EqualsAndHashCode( callSuper = true )
 @Entity
-@Table(name = "client")
-public class Client extends AbstractEntity {
+@Table(name = "candidate")
+public class Candidate {
 
-    @Column
+    @Column(name = "nom")
     private String nom;
 
+    @Column(name = "prenom")
+    private String description;
+
+
+    @Column(name = "image_url")
+    private String image;
+
+    @Column(name = "prix")
+    private BigDecimal prix;
     
 }
